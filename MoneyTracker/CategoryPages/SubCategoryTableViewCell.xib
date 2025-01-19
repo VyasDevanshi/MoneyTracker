@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="318" id="KGk-i7-Jjw" customClass="SubCategoryTableViewCell" customModule="MoneyTracker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="318"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="467" height="318"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9wo-U1-tfR" userLabel="Sub Category Lbl">
+                        <rect key="frame" x="15" y="10" width="437" height="296"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y62-Yw-v2V">
+                        <rect key="frame" x="15" y="317" width="437" height="1"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="0.59126357491134751" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="fpD-Ei-tU3"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tik-fL-VLF">
+                        <rect key="frame" x="15" y="311" width="437" height="1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="GrN-jT-woG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Y62-Yw-v2V" secondAttribute="trailing" constant="15" id="3u5-zZ-35s"/>
+                    <constraint firstItem="Tik-fL-VLF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="CFb-Fi-ae8"/>
+                    <constraint firstItem="Tik-fL-VLF" firstAttribute="top" secondItem="9wo-U1-tfR" secondAttribute="bottom" constant="5" id="Z1V-LA-Bmp"/>
+                    <constraint firstAttribute="bottom" secondItem="Y62-Yw-v2V" secondAttribute="bottom" id="fsi-4X-J9K"/>
+                    <constraint firstItem="Y62-Yw-v2V" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="g1R-uM-FJU"/>
+                    <constraint firstItem="Y62-Yw-v2V" firstAttribute="top" secondItem="Tik-fL-VLF" secondAttribute="bottom" constant="5" id="glH-X0-3cd"/>
+                    <constraint firstAttribute="trailing" secondItem="9wo-U1-tfR" secondAttribute="trailing" constant="15" id="o0f-0A-RsR"/>
+                    <constraint firstAttribute="trailing" secondItem="Tik-fL-VLF" secondAttribute="trailing" constant="15" id="qxp-uV-dUe"/>
+                    <constraint firstItem="9wo-U1-tfR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="x5l-73-D3f"/>
+                    <constraint firstItem="9wo-U1-tfR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="zZo-0I-NKO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="subCategoryLbl" destination="9wo-U1-tfR" id="BQA-8p-U2b"/>
+            </connections>
+            <point key="canvasLocation" x="151.90839694656489" y="85.211267605633807"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
